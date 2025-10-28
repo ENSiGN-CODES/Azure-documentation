@@ -47,9 +47,3 @@ module "nginx_app" {
   environment_variables = var.environment_variables
 }
 
-module "ssl_certificate" {
-  source                = "./Module/SSL certificate"
-  common_name           = var.common_name
-  organization          = var.organization
-  validity_period_hours = var.validity_period_hours
-}
